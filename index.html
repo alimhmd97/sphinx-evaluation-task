@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styels.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="preLoader"></div>
+      <div class="dummy_Img">
+        <img
+          class="img_close_icon"
+          src="/assets/close_icon.png"
+          alt="close icon"
+        />
+        <img src="/assets/dummy.jpg" alt="dummy img" />
+      </div>
+      <div class="help_content">
+        <p>help content goes here</p>
+        <img
+          class="help_close_icon"
+          src="/assets/close_icon.png"
+          alt="close icon"
+        />
+      </div>
+      <div class="game_card_wrapper">
+        <div class="header">
+          <div class="title">
+            <h1>What's in the basket? Choose and write</h1>
+          </div>
+          <div class="header_icons">
+            <div class="img_icon">
+              <img alt="image" src="/assets/resourse_icon.png" />
+            </div>
+            <div class="help_icon">
+              <img alt="help" src="/assets/help_icon.png" />
+            </div>
+          </div>
+        </div>
+        <div class="game_card">
+          <div class="card_items">
+            <div class="options">
+              <div class="options_first_line">
+                <p class="option" data-option="scissors">scissors</p>
+                <p class="option" data-option="eraser">eraser</p>
+                <p class="option" data-option="ruler">ruler</p>
+                <p class="option" data-option="bag">bag</p>
+              </div>
+              <div class="options_second_line">
+                <p class="option" data-option="pencil case">pencil case</p>
+                <p class="option" data-option="book">book</p>
+                <p class="option" data-option="pen">pen</p>
+                <p class="option" data-option="eraser">eraser</p>
+              </div>
+            </div>
+            <div class="answers_placeholder">
+              <p class="answer first_answer"></p>
+              <p class="answer second_answer"></p>
+              <p class="answer third_answer"></p>
+              <p class="answer forth_answer"></p>
+              <p class="answer fifth_answer"></p>
+            </div>
+            <div class="basket_img">
+              <img src="/assets/p15e11.png" alt="game img" />
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="reset_icon">
+            <img class="reset" src="/assets/replay_icon.png" alt="reset icon" />
+          </div>
+          <div class="set_answers_icon">
+            <img
+              class="show_answers"
+              src="/assets/showAns_icon.png"
+              alt="set answers icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

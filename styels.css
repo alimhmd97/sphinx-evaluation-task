@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: "Poppins", sans-seri;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+.container {
+  /* text-align: center; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  bottom: 0;
+
+  transition: all 500ms ease-in-out;
+
+  position: absolute;
+  top: 0;
+
+  right: 0;
+  left: 0;
+  /* height: 960px;
+  width: 1280px; */
+  transform-origin: top left;
+  margin: 0 auto;
+}
+.preLoader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(/assets/Preloader_2.gif) 50% 50% no-repeat rgb(255, 255, 255);
+}
+.game_card_wrapper {
+  display: none;
+  position: relative;
+  width: 884px;
+  margin: 0 auto;
+}
+.header {
+  height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.header_icons {
+  margin-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.title {
+  font-weight: 400;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 12px;
+}
+.img_icon {
+  width: 29%;
+  margin-right: 27px;
+}
+.help_icon {
+  width: 29%;
+}
+.game_card {
+  position: relative;
+  background-color: #0fa0c5;
+  height: 480px;
+}
+
+.card_items {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -12px;
+  height: 501px;
+  width: 848px;
+  border-radius: 15px;
+  border: 4px solid #f5821f;
+  left: 18px;
+  background-color: white;
+}
+.basket_img {
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+}
+.basket_img img {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.options_first_line {
+  margin: 25px 43px 0;
+  display: flex;
+  align-items: center;
+}
+.answer {
+  cursor: pointer;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first_answer {
+  width: 240px;
+  height: 60px;
+  z-index: 2;
+  bottom: 78px;
+  left: 13px;
+}
+.second_answer {
+  width: 240px;
+  height: 60px;
+  z-index: 2;
+  bottom: 18px;
+  left: 13px;
+}
+
+.third_answer {
+  width: 240px;
+  height: 60px;
+  z-index: 2;
+  bottom: 18px;
+  left: calc(50% - 117px);
+}
+.forth_answer {
+  width: 240px;
+  height: 60px;
+  z-index: 2;
+  bottom: 78px;
+  right: 5px;
+}
+.fifth_answer {
+  width: 240px;
+  height: 60px;
+  z-index: 2;
+  bottom: 18px;
+  right: 5px;
+}
+.options_second_line {
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+}
+.option {
+  /* transform: scale(0.9, 1); */
+  cursor: pointer;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 5px 5px 5px 15px;
+  border: 2px solid #52bbd5;
+  border-radius: 15px;
+  height: 60px;
+  line-height: 1.42857143;
+}
+.footer {
+  background-color: #deecf6;
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reset_icon {
+  margin-top: 15px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.reset_icon img {
+  width: 69%;
+}
+.set_answers_icon {
+  margin-top: 15px;
+
+  margin-right: 253px;
+}
+.set_answers_icon img {
+  width: 69%;
+}
+.right_Answer {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 15px;
+}
+.wrong_Answer {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 15px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.show_answers {
+  cursor: pointer;
+}
+
+.dummy_Img,
+.help_content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 85px;
+  height: 501px;
+  width: 848px;
+  border-radius: 15px;
+  border: 4px solid #f5821f;
+  left: 218px;
+  z-index: 10;
+  visibility: hidden;
+  background-color: white;
+}
+.dummy_Img img {
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.img_close_icon,
+.help_close_icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 4%;
+  height: 7%;
+}
+
+.help_content p {
+  display: inline-block;
+}
