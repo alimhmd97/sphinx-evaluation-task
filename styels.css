@@ -12,8 +12,8 @@ img {
 
 .container {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 1280px;
+  height: 960px;
   bottom: 0;
   transition: all 500ms ease-in-out;
   position: absolute;
@@ -21,7 +21,6 @@ img {
   right: 0;
   left: 0;
   transform-origin: top left;
-  margin: 0 auto;
 }
 .preLoader {
   position: fixed;
@@ -210,11 +209,15 @@ img {
   width: 848px;
   border-radius: 15px;
   border: 4px solid #f5821f;
-  left: 218px;
+  left: 535px;
   z-index: 10;
   visibility: hidden;
   background-color: white;
 }
+.help_content p {
+  display: inline-block;
+}
+
 .dummy_Img img {
   border-radius: 15px;
   margin: 15px;
@@ -227,8 +230,4 @@ img {
   top: 5px;
   width: 4%;
   height: 7%;
-}
-
-.help_content p {
-  display: inline-block;
 }

@@ -131,6 +131,7 @@ const hideRightOptions = () => {
 };
 
 const showRightAnswers = () => {
+  resetSelectedOptionStyle();
   for (let i = 0; i < answersPlaceHolders.length; i++) {
     answersPlaceHolders[
       i
@@ -188,8 +189,8 @@ helpCloseIcon.addEventListener("click", closeHelpPopUp);
 let pageContentContainer = document.querySelector(".container");
 
 function rescaleWindow(e) {
-  let clientWidth = 1280;
-  let clientHeight = 960;
+  let clientWidth = pageContentContainer.clientWidth;
+  let clientHeight = pageContentContainer.clientHeight;
   const baseRatio = clientWidth / clientHeight;
   const windowRatio = window.innerWidth / window.innerHeight;
   if (windowRatio > baseRatio) {
@@ -206,3 +207,4 @@ function rescaleWindow(e) {
   })`;
 }
 window.addEventListener("resize", rescaleWindow);
+window.addEventListener("load", rescaleWindow);
